@@ -11,6 +11,7 @@ namespace EmployeeWage
             EmpDailyWage_UC2.FindJobPeriod();
             EmpPartTimeWage_UC3.FindPartTime();
             EmpWage_SwitchCase_UC4.SwitchCase();
+            EmpWageForMonth_UC5.FindWageMonth();
             Console.ReadLine();
         }
     }

@@ -8,6 +8,7 @@ namespace EmployeeWage
         {
             Console.WriteLine("Employee Wage Computation");
             EmpPresent_Absent_UC1.FindEmpPresent_Absent();
+            EmpDailyWage_UC2.FindJobPeriod();
             Console.ReadLine();
         }
     }

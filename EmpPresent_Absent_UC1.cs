@@ -16,9 +16,9 @@ namespace EmployeeWage
             int empInput = random.Next(0, 2);//0 to 2 -->0,1
 
             if (isPresent == empInput)
-                Console.WriteLine("Employee is Present");
+                Console.WriteLine("Employee is Present_UC1");
             else
-                Console.WriteLine("Employee is Absent");
+                Console.WriteLine("Employee is Absent_UC1");
         }
     }
 }

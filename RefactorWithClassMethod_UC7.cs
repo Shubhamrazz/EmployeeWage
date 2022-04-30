@@ -6,24 +6,30 @@ using System.Threading.Tasks;
 
 namespace EmployeeWage
 {
-    class EmpWageForMonth_UC5
+    class RefactorWithClassMethod_UC7
     {
-        public static void FindWageMonth()
+        public static void RefactorTotalWorkingHrMonth()
         {
+            //Variables
             int empWage = 0, empHrs = 0, totalEmpWage = 0;
+            //CONSTANT
             const int FULL_TIME = 1;
             const int PART_TIME = 2;
             const int NUM_OF_WORKING_DAYS = 20;
             const int EMP_RATE_PER_HR = 20;
+            const int MAX_WORKING_HR = 80;
 
-
+            int workingHrs = 0;
+            int day = 1;
             Random random = new Random();
-            for (int day = 1; day <= NUM_OF_WORKING_DAYS; day++)
+
+            while (day <= NUM_OF_WORKING_DAYS && workingHrs <= MAX_WORKING_HR)//78
             {
                 int empInput = random.Next(0, 3);//0 TO 3(0,1,2)
+
                 switch (empInput)
                 {
-                    case FULL_TIME:
+                   case FULL_TIME:
                         Console.WriteLine("FullTime Employee is Present");
                         empHrs = 8;
                         break;
@@ -40,9 +46,14 @@ namespace EmployeeWage
                 Console.WriteLine("Daily Wage for day{0} is:{1}", day, +empWage);
                 //totalEmpwage=totalEmpwage+empwage;
                 totalEmpWage += empWage;
+                workingHrs += empWage;
+                day++;
             }
-            Console.WriteLine("UC5_TotatWage for {0} days is:{1}", NUM_OF_WORKING_DAYS, totalEmpWage);
+            Console.WriteLine("UC7_TotalWage for {0} days and working hrs:{1} and wage is:{2}", day - 1, workingHrs, totalEmpWage);
             Console.ReadLine();
         }
     }
 }
+
+    
+

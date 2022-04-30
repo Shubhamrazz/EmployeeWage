@@ -49,7 +49,7 @@ namespace EmployeeWage
                 workingHrs += empWage;
                 day++;
             }
-            Console.WriteLine("TotalWage for {0} days and working hrs:{1} and wage is:{2}", day - 1, workingHrs, totalEmpWage);
+            Console.WriteLine("UC6_TotalWage for {0} days and working hrs:{1} and wage is:{2}", day - 1, workingHrs, totalEmpWage);
             Console.ReadLine();
         }
     }

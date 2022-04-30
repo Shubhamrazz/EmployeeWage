@@ -30,7 +30,7 @@ namespace EmployeeWage
                 empHrs = 0;
             }
             empWage = empHrs * empRatePerHr;
-            Console.WriteLine("Daily Emp Wage : " + empWage);
+            Console.WriteLine("UC2_Daily Emp Wage : " + empWage);
         }
     }
 }

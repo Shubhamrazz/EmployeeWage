@@ -36,7 +36,7 @@ namespace EmployeeWage
                     break;
             }
             empWage = empHrs * empRatePerHr;
-            Console.WriteLine("Daily Employee Wage by implimentation of switch: " + empWage);
+            Console.WriteLine("UC4_Daily Employee Wage by implimentation of switch: " + empWage);
             Console.ReadLine();
         }
     }
